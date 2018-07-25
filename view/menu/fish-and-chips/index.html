@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Fish and chips - &pound;12.95 @ Gordon&#39;s Crown</title>
+
+<link rel="stylesheet" type="text/css" href="./../../media/css/screen.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./../../media/css/print.css" media="print" />
+
+<script type="text/javascript" src="./../../media/js/jquery.min.js"></script>
+<!-- admin does not need rating, but administrate tags -->
+<script type="text/javascript" src="./../../media/js/Tag.js"></script>
+</head>
+<body class="menu">
+	
+	<div id="canvas">
+		<div id="header">
+			<h1>
+				<a href="./../../" title="Gordon&#39;s Crown - Dedicated to delicious British Food">
+					<img alt="Gordon&#39;s Crown - Dedicated to delicious British Food" src="./../../media/img/header.png" />
+				</a>
+			</h1>
+		</div>
+		<ul id="menu">
+			<li class="home"><a href="./../../">Home</a></li>
+			<li class="menu"><a href="./../../menu">Menu</a></li>
+			<li class="contact"><a href="./../../contact">Contact</a></li>
+			<!-- <li class="login"><a href="./auth/login">Login</a></li> show when logged-off -->			
+			<li class="logout"><a href="./../../auth/logout">Logout</a></li><!-- show when logged-in -->
+		</ul>
+		<div id="content">
+			<p><a href="./../../menu" title="&larr; Back to the menu">&larr; Back to the menu</a></p>
+			<h1>Fish and chips - &pound;12.95</h1>
+			<div class="food">
+				<h3 class="category">Main courses</h3>
+				<!-- food specific image is optional, but looks nice -->
+				<div class="food_image">
+					<img src="./../../menu/img/fish-and-chips.jpg" alt="Fish and chips - &pound;12.95" />
+				</div>
+				<div class="food_description">
+					<p>
+						Line caught haddock in beer batter served with chipped potatoes and minted pea puree
+					</p>
+				</div>
+			
+				<h3>Tags: &nbsp;</h3>
+				<div id="tags-wrapper">
+					<div class="tag" id="tag2">
+						<a href="./../../tags/fish" title="Show where this tag is being used">fish</a>(<a href="#" onclick="Tag.deleteTag(2,4); return false;" title="Remove tag on the left">Remove</a>)
+					  </div>
+					<div class="tag" id="tag1">
+						<a href="./../../tags/potatoes" title="Show where this tag is being used">potatoes</a>(<a href="#" onclick="Tag.deleteTag(1,4); return false;" title="Remove tag on the left">Remove</a>)
+					</div>
+					<div class="message"></div>
+					&nbsp;
+				</div>
+					<div id="tagform">
+						<form action="./index.html" method="post" id="newtagform">
+							<input type="hidden" id="idMenu" value="4">
+							<fieldset class="input">
+								<div class="text" id="tag_list">
+									<label for="taglist">Add an existing tag:</label>
+									<select id="taglist">							
+										<option value="0">-select-</option>
+										<option value="3">cocktail</option>
+										<!-- already used for this food :
+										<option value="2">fish</option>
+										<option value="1">potatoes</option>
+										-->
+									</select>
+									<span class="message"></span>
+								</div>
+								<div class="text" id="tag_add">
+									<label for="tagnew">Add a new tag:</label>
+									<input type="text" id="tagnew"/>
+									<span class="message"></span>
+								</div>
+							</fieldset>
+							<fieldset class="submit">
+								<div class="submit">
+									<input type="submit" value="Submit tag" />
+									<span class="message"></span>
+								</div>
+							</fieldset>
+						</form>
+					</div>				
+				<h3>Rating: &nbsp;</h3>
+				<div id="ratings-wrapper">
+					<div id="rating">4.8 (3 ratings)</div>
+					<!-- the admin does not need to add a rating -->			
+				</div>					
+			</div>
+			<p><a href="./../../menu" title="&larr; Back to the menu">&larr; Back to the menu</a></p>
+		</div>
+		<div id="footer">
+			<p>Copyright &copy; 2011 &#183; All Rights Reserved</p>
+		</div>
+	</div>
+	
+</body>
+</html>

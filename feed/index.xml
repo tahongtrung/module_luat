@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+    <channel>
+        <title>Gordon's Crown Menus</title>
+        <link>http://www.gordonscrown.local/</link>
+		<atom:link href="http://www.gordonscrown.local/feed/" rel="self" type="application/rss+xml" />
+        <description>This is RSS Feed of Gordon's Crown Menus</description>
+        <language>en</language>
+        <item>
+            <title>Menu 1</title>
+			<link>http://www.gordonscrown.local/menu/davys-classic-prawn-cocktail</link>
+			<guid isPermaLink="false">http://www.gordonscrown.local/menu/davys-classic-prawn-cocktail</guid>
+			<category><![CDATA[Salads]]></category>		
+            <description><![CDATA[
+				<p>A selection of prawns, marie rose sauce with a hint of Manzanilla </p>
+				<div name="menuimage"><img src="http://www.gordonscrown.local/menu/img/davys-classic-prawn-cocktail.jpg" alt="Davy's classic prawn cocktail" title="Davy's classic prawn cocktail" /></div>
+				<div name="menueprice">Price: &pound;7.85</div>
+				<div name="menuerating">Rating: 4.3 (13 ratings)</div>
+				<div name="menuetags">Tags: <a href="http://www.gordonscrown.local/tags/fish">fish</a>, <a href="http://www.gordonscrown.local/tags/cocktail">cocktail</a></div>
+			]]></description> 	
+        </item>
+	</channel>
+</rss>
